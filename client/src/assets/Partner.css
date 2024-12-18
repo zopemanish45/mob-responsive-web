@@ -1,0 +1,81 @@
+/* General Styling */
+.phead {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .phead h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .phead p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Partners Section */
+  .partners {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .pn1, .pn2, .pn3, .pn4 {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .pn1 img, .pn2 img, .pn3 img, .pn4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .phead h1 {
+      font-size: 1.8rem;
+    }
+  
+    .phead p {
+      font-size: 0.9rem;
+      padding: 0 10px;
+    }
+  
+    .partners {
+      gap: 15px;
+    }
+  
+    .pn1, .pn2, .pn3, .pn4 {
+      height: 80px;
+      width: 80px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .phead h1 {
+      font-size: 1.5rem;
+    }
+  
+    .phead p {
+      font-size: 0.8rem;
+    }
+  
+    .pn1, .pn2, .pn3, .pn4 {
+      height: 70px;
+      width: 70px;
+    }
+  }
+  

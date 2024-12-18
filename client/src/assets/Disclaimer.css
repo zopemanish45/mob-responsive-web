@@ -1,0 +1,60 @@
+.stat {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+.flexible {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    color: white;
+    background-color: wheat;
+    gap: 20px;
+    border-radius: 20px;
+    position: relative;
+    top: 70px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.amit {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.amit input {
+    flex: 1 1 100%;
+    padding: 10px;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.amit button {
+    padding: 10px;
+    background-color: rgb(189, 160, 160);
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .flexible {
+        padding: 15px;
+    }
+
+    .amit {
+        justify-content: center;
+    }
+
+    .amit input,
+    .amit button {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}

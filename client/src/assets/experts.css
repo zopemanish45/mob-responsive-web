@@ -1,0 +1,151 @@
+.expert-container {
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  margin: 20px 10px;
+  padding: 20px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border-radius: 12px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.overview {
+  padding: 30px;
+  background-color: white;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 1200px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 40px;
+}
+
+.overview .images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.overview h2 {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.overview ul {
+  padding: 0;
+  text-align: left;
+}
+
+.overview li {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.services {
+  margin: 20px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  max-width: 1200px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  padding: 20px;
+  background-color: #f4f6f9;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .overview {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .overview {
+    padding: 20px;
+  }
+
+  .overview h2 {
+    font-size: 1.5rem;
+  }
+
+  .overview li {
+    font-size: 0.9rem;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+  }
+}

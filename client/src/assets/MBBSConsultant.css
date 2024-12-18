@@ -1,0 +1,280 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.consultant-container {
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.popular-heading {
+  font-size: 2rem;
+  color: #1d72b8;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.consultant-container p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.countries-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.country-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.country-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.country-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.country-card p {
+  margin: 15px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.consultant-heading {
+  font-size: 1.8rem;
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.consultant-heading span {
+  font-weight: bold;
+  color: #1d72b8;
+}
+
+.consultant-heading strong {
+  font-weight: bold;
+  color: #e76f51;
+}
+
+.consultant-highlights p {
+  font-size: 1rem;
+  color: #333;
+  margin: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("src/assets/university2/munda.jpg"); /* Corrected the file path */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.grid-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.education {
+  flex: 1 1 48%;
+  min-width: 300px;
+  background-color: #e0f7fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.para {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.para p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.love {
+  font-size: 1rem;
+  color: #555;
+}
+
+.love .action {
+  list-style: none;
+  padding: 0;
+}
+
+.love li {
+  margin-bottom: 10px;
+}
+
+.boxes {
+  flex: 1 1 48%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.first, .second {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: rgb(227, 215, 193);
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1 1 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: #1d72b8;
+}
+
+.grid-item p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+.disclaimer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .countries-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education, .boxes {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .consultant-heading {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .countries-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .consultant-heading {
+    font-size: 1.5rem;
+  }
+
+  .consultant-highlights p {
+    font-size: 0.9rem;
+  }
+
+  .education, .boxes {
+    width: 100%;
+  }
+
+  .grid-item {
+    width: 100%;
+  }
+
+  .first, .second {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .countries-container {
+    grid-template-columns: 1fr;
+  }
+
+  .consultant-heading {
+    font-size: 1.4rem;
+  }
+
+  .consultant-highlights p {
+    font-size: 0.8rem;
+  }
+
+  .grid-container {
+    gap: 20px;
+  }
+
+  .grid-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .education, .boxes {
+    width: 100%;
+  }
+
+  .education h3, .grid-item h3 {
+    font-size: 1.4rem;
+  }
+
+  .para p {
+    font-size: 0.9rem;
+  }
+
+  .love li {
+    font-size: 0.9rem;
+  }
+}
